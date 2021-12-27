@@ -1,7 +1,7 @@
 [
  {
    "repository": "android_vendor_xiaomi_whyred",
-   "target_path": "vendor/xiaomi/whyred"
+   "target_path": "vendor/xiaomi"
  },
  {
    "repository": "android_kernel_xiaomi_whyred",
@@ -10,5 +10,11 @@
   {
     "repository": "android_device_xiaomi_extras",
     "target_path": "device/xiaomi/extras"
-  }
+  },
+   {
+      "repository":"Darkstar085/vendor_xiaomi_MiuiCamera",
+      "target_path":"vendor/MiuiCamera",
+      "branch":"twelve",
+      "remote":"github"
+   }
 ]

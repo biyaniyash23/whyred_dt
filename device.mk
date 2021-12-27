@@ -22,6 +22,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
+$(call inherit-product, vendor/xiaomi/google/google.mk)
 
 # Vendor properties
 include $(LOCAL_PATH)/vendor_prop.mk
