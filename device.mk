@@ -579,3 +579,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-xiaomiparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xiaomiparts.xml
+
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages

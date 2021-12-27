@@ -27,6 +27,7 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit from custom vendor
 $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
