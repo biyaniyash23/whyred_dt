@@ -348,8 +348,44 @@
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
+<<<<<<< HEAD
 	    <!-- Flag indicating whether the surface flinger has limited
          alpha compositing functionality in hardware. If set, the window
+=======
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+         and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <!-- ID0:Fingerprint:Strong -->
+        <item>0:2:15</item>
+    </string-array>
+
+    <!-- Control the behavior when the user long presses the power button.
+            0 - Nothing
+            1 - Global actions menu
+            2 - Power off (with confirmation)
+            3 - Power off (without confirmation)
+            4 - Go to voice assist
+            5 - Go to assistant (Settings.Secure.ASSISTANT)
+    -->
+    <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Control the behavior when the user presses the power and volume up buttons together.
+            0 - Nothing
+            1 - Mute toggle
+            2 - Global actions menu
+    -->
+    <integer name="config_keyChordPowerVolumeUp">1</integer>
+
+
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">39px</dimen>
+    <dimen name="rounded_corner_radius_bottom">39px</dimen>
+
+        <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+>>>>>>> 28ca4f8 (Shifted Parts to XiaomiParts)
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>

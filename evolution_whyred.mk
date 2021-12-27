@@ -27,7 +27,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit from custom vendor.
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
+<<<<<<< HEAD
 USE_LEGACY_BOOTANIMATION := true
+=======
+# Inherit from custom vendor
+$(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
+>>>>>>> 28ca4f8 (Shifted Parts to XiaomiParts)
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
