@@ -366,6 +366,32 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson \
     libjson.vendor
+    libjson
+
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service \
+
+PRODUCT_PACKAGES += \
+    init.performance.sdm660.rc
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.goodix.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.xiaomiparts.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
+    fstab.qcom
 
 # Remove few packages
 PRODUCT_PACKAGES += \
