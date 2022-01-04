@@ -28,7 +28,7 @@ $(call inherit-product, vendor/xiaomi/google/google.mk)
 include $(LOCAL_PATH)/vendor_prop.mk
 
 # Dirac
-$(call inherit-product, vendor/xiaomi/whyred/dirac/dirac.mk)
+$(call inherit-product, vendor/xiaomi/dirac/dirac.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -301,6 +301,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
+    $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # HW crypto
 PRODUCT_PACKAGES += \
