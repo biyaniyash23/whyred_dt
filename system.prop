@@ -37,7 +37,7 @@ persist.demo.hdmirotationlock=false
 sdm.debug.disable_skip_validate=1
 
 #Property to enable display default color mode
-vendor.display.enable_default_color_mode=0
+vendor.display.enable_default_color_mode=1
 
 # Display Properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
@@ -246,3 +246,6 @@ ro.config.dha_tunnable=1
 # Smoothens UI
 persist.service.lgospd.enable=0
 persist.service.pcsync.enable=0
+
+# Display
+debug.sf.latch_unsignaled=0
