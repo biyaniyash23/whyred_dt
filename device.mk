@@ -28,7 +28,7 @@ $(call inherit-product, vendor/xiaomi/google/google.mk)
 include $(LOCAL_PATH)/vendor_prop.mk
 
 # Dirac
-$(call inherit-product, vendor/xiaomi/whyred/dirac/dirac.mk)
+$(call inherit-product, vendor/dirac/dirac.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
