@@ -45,11 +45,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="whyred" \
     PRIVATE_BUILD_DESC="redfin-user 12 SPB5.210812.002 7671067 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="whyred" \
+    PRODUCT_NAME="whyred" \
+    PRIVATE_BUILD_DESC="raven-user 12 SQ1D.220205.003 8069835 release-keys" \
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/redfin/redfin:12/SPB5.210812.002/7671067:user/release-keys
-
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys"
 TARGET_VENDOR := Xiaomi
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
