@@ -112,17 +112,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SDM660
 
-# Graphics
-debug.sf.latch_unsignaled=0
-
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
-    debug.stagefright.omx_default_rank=0 \
-    debug.stagefright.ccodec=0 \
-    mm.enable.sec.smoothstreaming=true \
-    media.stagefright.thumbnail.prefer_hw_codecs=true \
-    vendor.mediacodec.binder.size=6 
+    debug.stagefright.omx_default_rank=0
 
 # Rendering
 PRODUCT_PROPERTY_OVERRIDES += \
