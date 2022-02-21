@@ -31,6 +31,9 @@ $(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Inherit  Google Hotword Enrollment
+$(call inherit-product, vendor/xiaomi/google/google.mk)
+
 DEVICE_MAINTAINER := Yash Biyani
 PRODUCT_NAME := evolution_whyred
 PRODUCT_BRAND := Xiaomi
