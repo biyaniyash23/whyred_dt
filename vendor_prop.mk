@@ -109,7 +109,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Chipset
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=SDM660
 
 # Media
