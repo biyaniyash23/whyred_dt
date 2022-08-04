@@ -108,23 +108,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
 
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_whyred
 
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor
+
+# Boot animation
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -415,9 +409,11 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl:64 \
-    android.hardware.vibrator@1.0-service
+    vendor.qti.hardware.vibrator.service
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:vendor/etc/excluded-input-devices.xml
+    
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \

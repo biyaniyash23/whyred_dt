@@ -202,3 +202,9 @@ ro.lmk.use_psi=false
 
 # Watchdog
 ro.hw_timeout_multiplier=3
+
+# Additional props
+ro.vendor.qti.cgroup_follow.enable=true
+persist.vendor.qti.inputopts.enable=true
+persist.vendor.qti.inputopts.movetouchslop=0.6
+ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
